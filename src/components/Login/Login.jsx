@@ -60,7 +60,7 @@ const Login = () => {
     <>
       <section>
         <div className='container py-10 mx-auto'>
-          <h1 className='text-5xl font-bold text-green-700 text-center pb-10'>Login Now.</h1>
+          <h1 className='text-5xl font-bold text-green-700 text-center pb-10'>Login Now</h1>
           <form onSubmit={formik.handleSubmit} className='w-[60%] mx-auto'>
             <div className="relative z-0 w-full mb-5 group">
               <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.email} type="text" name="email" id="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer" placeholder=" " />
