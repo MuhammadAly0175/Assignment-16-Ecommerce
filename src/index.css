@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "./../node_modules/flowbite/dist/flowbite.min.css";
+
+.active {
+    color: black;
+}
+
+.threeDotsLoader {
+    width: 10px;
+    margin: 5px 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 0.5s infinite linear alternate;
+}
+
+@keyframes l5 {
+    0% {
+        box-shadow: 20px 0 black, -20px 0 white;
+        background: black;
+    }
+
+    33% {
+        box-shadow: 20px 0 black, -20px 0 white;
+        background: white;
+    }
+
+    66% {
+        box-shadow: 20px 0 white, -20px 0 black;
+        background: white;
+    }
+
+    100% {
+        box-shadow: 20px 0 white, -20px 0 black;
+        background: black;
+    }
+}
+
+.threeDotsLoader2 {
+    width: 15px;
+    margin: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l52 0.5s infinite linear alternate;
+  }
+  @keyframes l52 {
+    0% {
+      box-shadow: 20px 0 rgb(242, 151, 36), -20px 0 rgb(196, 1, 147);
+      background: rgb(242, 151, 36);
+    }
+    33% {
+      box-shadow: 20px 0 rgb(242, 151, 36), -20px 0 rgb(196, 1, 147);
+      background: rgb(196, 1, 147);
+    }
+    66% {
+      box-shadow: 20px 0 rgb(196, 1, 147), -20px 0 rgb(242, 151, 36);
+      background: rgb(196, 1, 147);
+    }
+    100% {
+      box-shadow: 20px 0 rgb(196, 1, 147), -20px 0 rgb(242, 151, 36);
+      background: rgb(242, 151, 36);
+    }
+  }
