@@ -36,6 +36,7 @@ function App() {
         { path: "/forgotpassword", element: <ForgotPassword />, },
         { path: "/verifycode", element: <VerifyCode />, },
         { path: "/resetpassword", element: <ResetPassword />, },
+        { path: "/Assignment-16-Ecommerce/", element: <ProtectedRoute><Home /></ProtectedRoute>, },
         { path: "/", element: <ProtectedRoute><Home /></ProtectedRoute>, },
         { path: "/productdetails/:id", element: <ProtectedRoute><ProductDetails /></ProtectedRoute>, },
         { path: "/cart", element: <ProtectedRoute><Cart /></ProtectedRoute>, },
