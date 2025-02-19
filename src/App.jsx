@@ -28,7 +28,7 @@ function App() {
 
   const QC = new QueryClient()
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "", element: <Layout />, children: [
         { path: "/login", element: <Login />, },
@@ -37,6 +37,7 @@ function App() {
         { path: "/verifycode", element: <VerifyCode />, },
         { path: "/resetpassword", element: <ResetPassword />, },
         { path: "", element: <ProtectedRoute><Home /></ProtectedRoute>, },
+        { path: "/Assignment-16-Ecommerce/", element: <ProtectedRoute><Home /></ProtectedRoute>, },
         { path: "/", element: <ProtectedRoute><Home /></ProtectedRoute>, },
         { path: "/productdetails/:id", element: <ProtectedRoute><ProductDetails /></ProtectedRoute>, },
         { path: "/cart", element: <ProtectedRoute><Cart /></ProtectedRoute>, },

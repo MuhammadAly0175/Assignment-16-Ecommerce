@@ -30,7 +30,7 @@ const CheckOut = () => {
                         token: localStorage.getItem('tkn')
                     },
                     params: {
-                        url: "http://localhost:5173"
+                        url: "http://localhost:5173/Assignment-16-Ecommerce/#"
                     }
                 })
             setisLoading(false)
@@ -58,7 +58,7 @@ const CheckOut = () => {
     return (
         <>
             <section>
-                <div className='py-10 mx-auto max-w-7xl mx-auto'>
+                <div className='py-10 mx-auto max-w-7xl'>
                     <form onSubmit={formik.handleSubmit} className='w-[90%] md:w-[60%] mx-auto'>
                         <div className="relative z-0 w-full mb-5 group">
                             <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.details} type="text" name="details" id="details" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer" placeholder=" " />
